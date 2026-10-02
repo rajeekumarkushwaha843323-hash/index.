@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>VICKY COMPLETE ENGLISH MASTER BOOK</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Arial,"Noto Sans Devanagari",sans-serif;
+ background:#f5f7fb;
+ color:#18202a;
+ line-height:1.65;
+}
+body.dark{background:#111827;color:#e5e7eb}
+header{
+ background:linear-gradient(135deg,#111827,#2563eb);
+ color:white;
+ padding:35px 20px;
+ text-align:center;
+}
+header h1{margin:0;font-size:clamp(28px,6vw,48px)}
+header p{margin:8px 0}
+.container{max-width:1200px;margin:auto;padding:18px}
+.toolbar{
+ position:sticky;top:0;z-index:50;
+ background:white;padding:10px;
+ box-shadow:0 2px 12px #0002;
+ display:flex;gap:8px;flex-wrap:wrap;
+}
+.dark .toolbar{background:#1f2937}
+input,button,select{
+ padding:10px 12px;border-radius:8px;border:1px solid #ccd3dd;
+ font-size:15px;
+}
+input{flex:1;min-width:180px}
+button{cursor:pointer;background:#2563eb;color:white;border:0}
+button:hover{opacity:.9}
+.layout{display:grid;grid-template-columns:250px 1fr;gap:20px}
+.sidebar{
+ position:sticky;top:65px;height:calc(100vh - 80px);
+ overflow:auto;background:white;padding:15px;border-radius:12px;
+ box-shadow:0 2px 10px #0001;
+}
+.dark .sidebar,.dark .card,.dark .chapter{background:#1f2937}
+.sidebar a{
+ display:block;padding:8px;border-radius:7px;
+ color:inherit;text-decoration:none;
+}
+.sidebar a:hover{background:#2563eb;color:white}
+.chapter{
+ background:white;margin-bottom:20px;padding:24px;
+ border-radius:14px;box-shadow:0 2px 10px #0001;
+}
+.chapter h2{
+ color:#2563eb;border-bottom:2px solid #dbeafe;padding-bottom:8px
+}
+.chapter h3{color:#7c3aed}
+.card{
+ background:#f8fafc;border-left:4px solid #2563eb;
+ padding:15px;margin:12px 0;border-radius:8px;
+}
+.dark .card{background:#111827}
+.eng{font-weight:bold;color:#111827}
+.dark .eng{color:#fff}
+.hindi{color:#b42318}
+.trans{color:#087443}
+.formula{
+ background:#eef2ff;padding:14px;border-radius:8px;
+ font-family:monospace;overflow:auto;
+}
+table{width:100%;border-collapse:collapse;margin:15px 0}
+th,td{border:1px solid #ccd3dd;padding:9px;text-align:left}
+th{background:#2563eb;color:white}
+.dark th{background:#374151}
+.example{
+ border:1px solid #dbeafe;padding:12px;margin:10px 0;border-radius:8px
+}
+.answer{display:none;background:#ecfdf5;padding:10px;margin-top:5px}
+.show{display:block}
+.badge{
+ display:inline-block;background:#dbeafe;color:#1d4ed8;
+ padding:4px 9px;border-radius:20px;margin:3px;font-size:13px
+}
+.progress{
+ position:fixed;bottom:0;left:0;height:4px;background:#22c55e;
+ width:0%;z-index:100
+}
+footer{text-align:center;padding:30px;background:#111827;color:white}
+@media(max-width:800px){
+ .layout{grid-template-columns:1fr}
+ .sidebar{position:static;height:auto}
+ .chapter{padding:16px}
+ table{font-size:13px}
+}
+@media print{
+ .toolbar,.sidebar,.no-print,button,input{display:none!important}
+ .layout{display:block}
+ .chapter{box-shadow:none;page-break-inside:avoid}
+ body{background:white;color:black}
+}
+</style>
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header>
+<h1>VICKY COMPLETE ENGLISH MASTER BOOK</h1>
+<p><b>ALL-IN-ONE COMPLETE ENGLISH COURSE</b></p>
+<p>English + Hindi • Transliteration • Grammar • Tenses • Speaking • Dictionary • Translation</p>
+<p><b>English सीखो • समझो • बोलो • लिखो • Master करो</b></p>
+<p>LOOK → LEARN → UNDERSTAND → SPEAK → WRITE → PRACTICE → USE → MASTER</p>
+<p>Created by VICKY</p>
+</header>
+
+<div class="toolbar no-print">
+<input id="searchBox" placeholder="Search English, Hindi, grammar, word...">
+<button onclick="toggleDark()">🌙 Dark</button>
+<button onclick="window.print()">🖨️ Print / Save PDF</button>
+<button onclick="topPage()">⬆️ Top</button>
+</div>
+
+<div class="container">
+<div class="layout">
+
+<aside class="sidebar no-print">
+<h3>📚 Contents</h3>
+<a href="#foundation">1. Foundation</a>
+<a href="#parts">2. Parts of Speech</a>
+<a href="#tenses">3. 12 Tenses</a>
+<a href="#grammar">4. Complete Grammar</a>
+<a href="#speaking">5. Speaking Course</a>
+<a href="#dictionary">6. Dictionary</a>
+<a href="#translation">7. Translation</a>
+<a href="#pronunciation">8. Pronunciation</a>
+<a href="#reading">9. Reading</a>
+<a href="#writing">10. Writing</a>
+<a href="#tests">11. Tests</a>
+<a href="#daily">12. Daily 2-Minute Test</a>
+<a href="#plan">13. 365-Day Plan</a>
+<a href="#masti">14. Masti Zone</a>
+<a href="#motivation">15. Motivation</a>
+</aside>
+
+<main id="book">
+
+<section class="chapter searchable" id="foundation">
+<h2>1. English Foundation</h2>
+
+<h3>What is English?</h3>
+<div class="card">
+<div class="eng">English is an international language used for communication.</div>
+<div class="hindi">English एक अंतरराष्ट्रीय भाषा है जिसका उपयोग बातचीत के लिए किया जाता है।</div>
+<div class="trans">इंग्लिश इज़ ऐन इंटरनैशनल लैंग्वेज यूज़्ड फ़ॉर कम्यूनिकेशन।</div>
+</div>
+
+<h3>Alphabet</h3>
+<p>English has 26 letters.</p>
+
+<table>
+<tr><th>Capital</th><th>Small</th><th>Name</th></tr>
+<tr><td>A</td><td>a</td><td>ए</td></tr>
+<tr><td>B</td><td>b</td><td>बी</td></tr>
+<tr><td>C</td><td>c</td><td>सी</td></tr>
+<tr><td>D</td><td>d</td><td>डी</td></tr>
+<tr><td>E</td><td>e</td><td>ई</td></tr>
+<tr><td>F</td><td>f</td><td>एफ</td></tr>
+<tr><td>G</td><td>g</td><td>जी</td></tr>
+<tr><td>H</td><td>h</td><td>एच</td></tr>
+<tr><td>I</td><td>i</td><td>आइ</td></tr>
+<tr><td>J</td><td>j</td><td>जे</td></tr>
+<tr><td>K</td><td>k</td><td>के</td></tr>
+<tr><td>L</td><td>l</td><td>एल</td></tr>
+<tr><td>M</td><td>m</td><td>एम</td></tr>
+<tr><td>N</td><td>n</td><td>एन</td></tr>
+<tr><td>O</td><td>o</td><td>ओ</td></tr>
+<tr><td>P</td><td>p</td><td>पी</td></tr>
+<tr><td>Q</td><td>q</td><td>क्यू</td></tr>
+<tr><td>R</td><td>r</td><td>आर</td></tr>
+<tr><td>S</td><td>s</td><td>एस</td></tr>
+<tr><td>T</td><td>t</td><td>टी</td></tr>
+<tr><td>U</td><td>u</td><td>यू</td></tr>
+<tr><td>V</td><td>v</td><td>वी</td></tr>
+<tr><td>W</td><td>w</td><td>डब्ल्यू</td></tr>
+<tr><td>X</td><td>x</td><td>एक्स</td></tr>
+<tr><td>Y</td><td>y</td><td>वाइ</td></tr>
+<tr><td>Z</td><td>z</td><td>ज़ेड</td></tr>
+</table>
+
+<h3>Vowels</h3>
+<p><b>A, E, I, O, U</b> are the five main vowels.</p>
+
+<h3>Sentence Structure</h3>
+<div class="formula">Subject + Verb + Object</div>
+
+<div class="example">
+<div class="eng">I read a book.</div>
+<div class="hindi">मैं एक किताब पढ़ता हूँ।</div>
+<div class="trans">आइ रीड अ बुक।</div>
+</div>
+
+<h3>Punctuation</h3>
+<p>Full stop (.), comma (,), question mark (?), exclamation mark (!), colon (:), semicolon (;), quotation marks (“ ”).</p>
+</section>
+
+
+<section class="chapter searchable" id="parts">
+<h2>2. Parts of Speech</h2>
+
+<div class="card"><b>Noun</b> — नाम बताने वाला शब्द।<br>
+Example: <b>Ravi is a student.</b><br>
+रवि एक विद्यार्थी है।<br>
+रवि इज़ अ स्टूडेंट।
+</div>
+
+<div class="card"><b>Pronoun</b> — Noun की जगह आने वाला शब्द।<br>
+Example: <b>He is my friend.</b><br>
+वह मेरा दोस्त है।<br>
+ही इज़ माय फ्रेंड।
+</div>
+
+<div class="card"><b>Verb</b> — काम या अवस्था बताने वाला शब्द।<br>
+Example: <b>She writes a letter.</b><br>
+वह एक पत्र लिखती है।<br>
+शी राइट्स अ लेटर।
+</div>
+
+<div class="card"><b>Adjective</b> — Noun/Pronoun की विशेषता बताता है।<br>
+Example: <b>He is a good boy.</b><br>
+वह एक अच्छा लड़का है।<br>
+ही इज़ अ गुड बॉय।
+</div>
+
+<div class="card"><b>Adverb</b> — Verb, adjective या adverb की विशेषता बताता है।<br>
+Example: <b>He runs quickly.</b><br>
+वह तेज़ दौड़ता है।<br>
+ही रन्स क्विक्ली।
+</div>
+
+<div class="card"><b>Preposition</b> — संबंध बताता है।<br>
+Examples: in, on, at, by, with, from, to, for, since, until.
+</div>
+
+<div class="card"><b>Conjunction</b> — शब्दों या वाक्यों को जोड़ता है।<br>
+Examples: and, but, or, because, although.
+</div>
+
+<div class="card"><b>Interjection</b> — अचानक भावना।<br>
+Examples: Wow! Oh! Hurrah! Alas!
+</div>
+
+<div class="card"><b>Determiner</b> — Noun को निर्धारित करता है।<br>
+Examples: this, that, these, those, some, any, many, much, each, every.
+</div>
+
+<div class="card"><b>Article</b> — a, an, the.
+</div>
+
+<h3>Noun Types</h3>
+<p>Common • Proper • Collective • Abstract • Material • Concrete • Countable • Uncountable • Compound • Possessive</p>
+
+<h3>Pronoun Types</h3>
+<p>Personal • Possessive • Reflexive • Demonstrative • Interrogative • Relative • Indefinite • Distributive • Reciprocal</p>
+
+<h3>Verb Types</h3>
+<p>Main • Helping • Modal • Linking • Transitive • Intransitive • Regular • Irregular • Finite • Non-finite • Phrasal</p>
+
+<h3>Adjective Types</h3>
+<p>Quality • Quantity • Number • Demonstrative • Possessive • Interrogative • Distributive • Proper</p>
+
+<h3>Adverb Types</h3>
+<p>Manner • Place • Time • Frequency • Degree • Reason</p>
+</section>
+
+
+<section class="chapter searchable" id="tenses">
+<h2>3. Complete 12 Tenses</h2>
+<div id="tenseContainer"></div>
+</section>
+
+
+<section class="chapter searchable" id="grammar">
+<h2>4. Complete Grammar</h2>
+
+<h3>Articles</h3>
+<p><b>A</b> — consonant sound से पहले।</p>
+<p><b>An</b> — vowel sound से पहले।</p>
+<p><b>The</b> — किसी निश्चित व्यक्ति/वस्तु के लिए।</p>
+
+<div class="example">
+English: I saw a dog.<br>
+Hindi: मैंने एक कुत्ता देखा।<br>
+Transliteration: आइ सॉ अ डॉग।
+</div>
+
+<h3>Subject–Verb Agreement</h3>
+<div class="example">
+He plays cricket.<br>
+वह क्रिकेट खेलता है।<br>
+ही प्लेज़ क्रिकेट।
+</div>
+
+<h3>Modals</h3>
+<p>can, could, may, might, must, should, would, will, shall, ought to</p>
+
+<h3>Active and Passive Voice</h3>
+<div class="example">
+Active: Ram writes a letter.<br>
+Hindi: राम एक पत्र लिखता है।<br><br>
+Passive: A letter is written by Ram.<br>
+Hindi: राम द्वारा एक पत्र लिखा जाता है।
+</div>
+
+<h3>Direct and Indirect Speech</h3>
+<div class="example">
+Direct: He said, “I am happy.”<br>
+Indirect: He said that he was happy.
+</div>
+
+<h3>Conditionals</h3>
+<p>Zero Conditional • First Conditional • Second Conditional • Third Conditional • Mixed Conditional</p>
+
+<h3>Clauses</h3>
+<p>Noun Clause • Adjective Clause • Adverb Clause • Relative Clause</p>
+
+<h3>Sentence Types</h3>
+<p>Simple • Compound • Complex • Compound-Complex</p>
+
+<h3>Gerund and Infinitive</h3>
+<div class="example">
+I enjoy reading.<br>
+मुझे पढ़ना पसंद है।<br>
+आइ एंजॉय रीडिंग।
+</div>
+
+<h3>Comparison</h3>
+<p>Positive • Comparative • Superlative</p>
+
+<h3>Question Formation</h3>
+<p>Yes/No Questions • WH Questions • Question Tags • Embedded Questions • Short Answers</p>
+
+<h3>Common Confusing Words</h3>
+<p>Accept/Except • Affect/Effect • Advice/Advise • Their/There/They're • Your/You're • Its/It's</p>
+
+<h3>Advanced Grammar</h3>
+<p>Parallelism • Inversion • Emphasis • Ellipsis • Substitution • Formal English • Academic English • Sentence Transformation • Rearrangement • Punctuation • Capitalization</p>
+</section>
+
+
+<section class="chapter searchable" id="speaking">
+<h2>5. FULL ENGLISH SPEAKING COURSE</h2>
+
+<h3>Self Introduction</h3>
+<div class="card">
+<div class="eng">Hello, my name is Vicky. I am from Bihar. I am learning English. I enjoy creating videos and learning new skills. Nice to meet you.</div>
+<div class="hindi">नमस्ते, मेरा नाम Vicky है। मैं बिहार से हूँ। मैं English सीख रहा हूँ। मुझे वीडियो बनाना और नई skills सीखना पसंद है। आपसे मिलकर खुशी हुई।</div>
+<div class="trans">हेलो, माय नेम इज़ विक्की। आइ ऐम फ्रॉम बिहार। आइ ऐम लर्निंग इंग्लिश। आइ एंजॉय क्रिएटिंग वीडियोज़ एंड लर्निंग न्यू स्किल्स। नाइस टू मीट यू।</div>
+</div>
+
+<h3>Daily Routine</h3>
+<div class="card">
+English: I wake up early. I brush my teeth and get ready.<br>
+Hindi: मैं जल्दी उठता हूँ। मैं अपने दाँत साफ करता हूँ और तैयार होता हूँ।<br>
+Transliteration: आइ वेक अप अर्ली। आइ ब्रश माय टीथ एंड गेट रेडी।
+</div>
+
+<h3>School Conversation</h3>
+<div class="card">
+English: May I come in?<br>
+Hindi: क्या मैं अंदर आ सकता हूँ?<br>
+Transliteration: मे आइ कम इन?
+</div>
+
+<div class="card">
+English: Please explain this question again.<br>
+Hindi: कृपया यह प्रश्न फिर से समझाइए।<br>
+Transliteration: प्लीज़ एक्सप्लेन दिस क्वेश्चन अगेन।
+</div>
+
+<h3>Shopping</h3>
+<div class="card">
+English: How much is this?<br>
+Hindi: यह कितने का है?<br>
+Transliteration: हाउ मच इज़ दिस?
+</div>
+
+<div class="card">
+English: Can I see another option?<br>
+Hindi: क्या मैं दूसरा विकल्प देख सकता हूँ?<br>
+Transliteration: कैन आइ सी अनदर ऑप्शन?
+</div>
+
+<h3>Restaurant</h3>
+<div class="card">
+English: I would like to order this.<br>
+Hindi: मैं यह ऑर्डर करना चाहूँगा।<br>
+Transliteration: आइ वुड लाइक टू ऑर्डर दिस।
+</div>
+
+<h3>Travel</h3>
+<div class="card">
+English: Could you tell me how to get to the station?<br>
+Hindi: क्या आप बता सकते हैं कि स्टेशन कैसे जाना है?<br>
+Transliteration: कुड यू टेल मी हाउ टू गेट टू द स्टेशन?
+</div>
+
+<h3>Telephone</h3>
+<div class="card">
+English: May I speak to Rahul?<br>
+Hindi: क्या मैं राहुल से बात कर सकता हूँ?<br>
+Transliteration: मे आइ स्पीक टू राहुल?
+</div>
+
+<h3>Asking for Help</h3>
+<div class="card">
+English: Could you please help me?<br>
+Hindi: क्या आप कृपया मेरी मदद कर सकते हैं?<br>
+Transliteration: कुड यू प्लीज़ हेल्प मी?
+</div>
+
+<h3>Giving Opinions</h3>
+<div class="card">
+English: In my opinion, practice is very important.<br>
+Hindi: मेरी राय में अभ्यास बहुत महत्वपूर्ण है।<br>
+Transliteration: इन माय ओपिनियन, प्रैक्टिस इज़ वेरी इम्पॉर्टेन्ट।
+</div>
+
+<h3>Agreeing</h3>
+<div class="card">
+English: I agree with you.<br>
+Hindi: मैं आपसे सहमत हूँ।<br>
+Transliteration: आइ अग्री विद यू।
+</div>
+
+<h3>Disagreeing Politely</h3>
+<div class="card">
+English: I understand your point, but I have a different view.<br>
+Hindi: मैं आपकी बात समझता हूँ, लेकिन मेरी राय अलग है।<br>
+Transliteration: आइ अंडरस्टैंड योर पॉइंट, बट आइ हैव अ डिफरेंट व्यू।
+</div>
+
+<h3>Interview Practice</h3>
+<div class="card">
+English: Tell me about yourself.<br>
+Hindi: अपने बारे में बताइए।<br>
+Transliteration: टेल मी अबाउट योरसेल्फ।
+</div>
+
+<div class="card">
+English: What are your strengths?<br>
+Hindi: आपकी खूबियाँ क्या हैं?<br>
+Transliteration: व्हाट आर योर स्ट्रेंथ्स?
+</div>
+
+<h3>Presentation</h3>
+<div class="card">
+English: Good morning everyone. Today I am going to talk about English learning.<br>
+Hindi: सुप्रभात सभी को। आज मैं English सीखने के बारे में बात करने वाला हूँ।<br>
+Transliteration: गुड मॉर्निंग एवरीवन। टुडे आइ ऐम गोइंग टू टॉक अबाउट इंग्लिश लर्निंग।
+</div>
+
+<h3>Speaking Fluency Drill</h3>
+<p>हर sentence को 3 बार पढ़ें:</p>
+<ol>
+<li>धीरे बोलें।</li>
+<li>सामान्य speed में बोलें।</li>
+<li>बिना देखकर बोलें।</li>
+</ol>
+</section>
+
+
+<section class="chapter searchable" id="dictionary">
+<h2>6. A–Z English Dictionary</h2>
+
+<input id="dictSearch" placeholder="Search dictionary..." oninput="searchDictionary()">
+
+<div id="alphabet"></div>
+<div id="dictionaryList"></div>
+
+<p><b>Dictionary format:</b> Word → Hindi Meaning → Pronunciation → Part of Speech → Definition → Example → Translation → Synonyms → Antonyms → Word Family.</p>
+</section>
+
+
+<section class="chapter searchable" id="translation">
+<h2>7. Translation Practice</h2>
+<div id="translationList"></div>
+</section>
+
+
+<section class="chapter searchable" id="pronunciation">
+<h2>8. Pronunciation & Fluency</h2>
+
+<h3>Silent Letters</h3>
+<p>knife → नाइफ</p>
+<p>honest → ऑनिस्ट</p>
+<p>write → राइट</p>
+<p>know → नो</p>
+
+<h3>Word Stress</h3>
+<p>English words में कुछ syllables पर ज्यादा जोर दिया जाता है।</p>
+
+<h3>Reading Aloud</h3>
+<div class="card">
+English: Practice makes progress.<br>
+Hindi: अभ्यास से प्रगति होती है।<br>
+Transliteration: प्रैक्टिस मेक्स प्रोग्रेस।
+</div>
+
+<h3>Tongue Twister</h3>
+<p>Red lorry, yellow lorry.</p>
+<p>रेड लॉरी, येलो लॉरी।</p>
+</section>
+
+
+<section class="chapter searchable" id="reading">
+<h2>9. Reading Course</h2>
+
+<h3>Short Passage</h3>
+<div class="card">
+<div class="eng">
+Learning English takes time and regular practice. Reading, writing, listening and speaking every day can gradually improve your communication skills.
+</div>
+<div class="hindi">
+English सीखने में समय और नियमित अभ्यास लगता है। हर दिन पढ़ना, लिखना, सुनना और बोलना आपकी communication skills को धीरे-धीरे बेहतर कर सकता है।
+</div>
+<div class="trans">
+लर्निंग इंग्लिश टेक्स टाइम एंड रेग्युलर प्रैक्टिस। रीडिंग, राइटिंग, लिसनिंग एंड स्पीकिंग एवरी डे कैन ग्रैजुअली इम्प्रूव योर कम्यूनिकेशन स्किल्स।
+</div>
+</div>
+
+<h3>Reading Questions</h3>
+<ol>
+<li>What does learning English require?</li>
+<li>Which four activities are mentioned?</li>
+<li>What can regular practice improve?</li>
+</ol>
+</section>
+
+
+<section class="chapter searchable" id="writing">
+<h2>10. Writing Course</h2>
+
+<h3>Paragraph</h3>
+<div class="card">
+<b>My Daily Routine</b><br>
+I wake up early in the morning. I get ready and study for some time. I attend my classes and complete my work. In the evening, I revise my lessons and practice English.
+</div>
+
+<h3>Formal Letter Format</h3>
+<p>Sender's Address → Date → Receiver's Address → Subject → Salutation → Body → Closing → Name</p>
+
+<h3>Application</h3>
+<p>Practice writing a leave application to your school.</p>
+
+<h3>Email</h3>
+<p>Learn Subject, Greeting, Main Message, Closing and Signature.</p>
+
+<h3>Essay</h3>
+<p>Introduction → Main Body → Examples → Conclusion</p>
+
+<h3>Notice</h3>
+<p>Heading → Date → Event → Time → Place → Instructions → Name/Designation</p>
+
+<h3>Report</h3>
+<p>Title → Introduction → Details → Findings → Conclusion</p>
+
+<h3>Article</h3>
+<p>Headline → Introduction → Main Points → Conclusion</p>
+</section>
+
+
+<section class="chapter" id="tests">
+<h2>11. Test Center</h2>
+
+<div id="testArea">
+<button onclick="startTest()">▶ Start 10-Question Test</button>
+<div id="testQuestions"></div>
+<div id="testResult"></div>
+</div>
+
+<h3>Test Categories</h3>
+<p>
+Foundation Test • Parts of Speech Test • Tense Test • Grammar Test • Vocabulary Test •
+Translation Test • Reading Test • Writing Test • Speaking Test • Final Master Test
+</p>
+</section>
+
+
+<section class="chapter" id="daily">
+<h2>12. Daily 2-Minute Test</h2>
+
+<p><b>हर दिन नया test.</b></p>
+
+<div class="card">
+Day: <span id="dayNumber"></span><br>
+Time: <b id="timer">02:00</b>
+</div>
+
+<button onclick="startDailyTest()">▶ Start Today's Test</button>
+<div id="dailyQuestions"></div>
+<div id="dailyResult"></div>
+</section>
+
+
+<section class="chapter searchable" id="plan">
+<h2>13. 365-Day English Master Plan</h2>
+<div id="yearPlan"></div>
+</section>
+
+
+<section class="chapter searchable" id="masti">
+<h2>14. VICKY English Masti Zone 😂</h2>
+
+<h3>Riddle</h3>
+<p>What has keys but cannot open locks?</p>
+<button onclick="toggleAnswer('r1')">Show Answer</button>
+<div class="answer" id="r1">A keyboard.</div>
+
+<h3>Word Game</h3>
+<p>Make a new English word from the letters of “LEARN”.</p>
+
+<h3>Grammar Challenge</h3>
+<p>Correct this sentence: “He go to school every day.”</p>
+<button onclick="toggleAnswer('r2')">Show Answer</button>
+<div class="answer" id="r2">He goes to school every day.</div>
+</section>
+
+
+<section class="chapter searchable" id="motivation">
+<h2>15. VICKY Motivation Power ❤️</h2>
+
+<div class="card">
+<b>पहले मन को तैयार करो, फिर ज्ञान को मजबूत करो।</b>
+</div>
+
+<div class="card">
+अगर मेरे पापा मेरे लिए इतना कर सकते हैं,
+तो मैं अपने भविष्य के लिए थोड़ा और मेहनत क्यों नहीं कर सकता?
+</div>
+
+<p>Discipline • Hard Work • Patience • Consistency • Self-Belief • Dreams</p>
+</section>
+
+</main>
+</div>
+</div>
+
+<footer>
+<h3>VICKY COMPLETE ENGLISH MASTER BOOK</h3>
+<p>English सीखो • समझो • बोलो • लिखो • Master करो</p>
+<p>Created by VICKY</p>
+</footer>
+
+
+<script>
+
+/* =========================
+   12 TENSES
+========================= */
+
+const tenses=[
+{
+name:"Simple Present",
+formula:"Subject + V1 / V1+s/es + Object",
+help:"do / does",
+use:"Habits, routines, facts and general truths.",
+examples:[
+["I play cricket.","मैं क्रिकेट खेलता हूँ।","आइ प्ले क्रिकेट।"],
+["She reads a book.","वह किताब पढ़ती है।","शी रीड्स अ बुक।"],
+["They go to school.","वे स्कूल जाते हैं।","दे गो टू स्कूल।"],
+["He works hard.","वह मेहनत करता है।","ही वर्क्स हार्ड।"]
+]},
+{
+name:"Present Continuous",
+formula:"Subject + is/am/are + V-ing",
+help:"is / am / are",
+use:"An action happening now.",
+examples:[
+["I am reading a book.","मैं एक किताब पढ़ रहा हूँ।","आइ ऐम रीडिंग अ बुक।"],
+["She is cooking food.","वह खाना बना रही है।","शी इज़ कुकिंग फूड।"],
+["They are playing.","वे खेल रहे हैं।","दे आर प्लेइंग।"]
+]},
+{
+name:"Present Perfect",
+f
